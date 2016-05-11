@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.prathyusha.taboo.Instructions">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GamePlayHeading"
+        android:text="Gameplay and Scoring:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GamePlayText"
+        android:layout_below="@+id/GamePlayHeading"
+        android:text="
+The team not giving clues must watch for Taboos or other violations of the rules. If they successfully spot a rule being broken, they may use their buzzer to interrupt play and very briefly explain the infraction. Clue-givers must place the current card into the discard pile and draw a new one. Each card in the discard pile represents one point for the other team. Once time runs out, the teams are swapped and roles are reversed. Once each player has taken a turn as clue-give, r the game ends. If teams are uneven, a player on the smaller team will be clue-giver twice."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RulesHeading"
+        android:text="Rules:"
+        android:layout_below="@+id/GamePlayText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RulesText"
+        android:layout_below="@+id/RulesHeading"
+        android:text="
+1. Clue-givers may not use any taboo words, including abbreviations and any part of the taboo word.
+2. Clue-givers may not use sound effects or use gestures to indicate the clue word.
+3. Clue-givers may pass on any card at any time, but the card is then placed in the discard pile.
+4. When time is called, the final card does not go into the discard pile, but is instead removed from play.
+
+Scoring:
+Every card stacked upon another in the card holder represents one point for Team A.
+Every card stacked in the discard pile represents one point for Team B.
+The final card in play when time runs out is worth no points for either team.
+At the end of each round points are tallied for each team, the winner is declared by the team with the most points."/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScoringHeading"
+        android:text="Scoring:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/RulesText"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScoringText"
+        android:layout_below="@+id/ScoringHeading"
+        android:text="
+Every card stacked upon another in the card holder represents one point for Team A.
+Every card stacked in the discard pile represents one point for Team B.
+The final card in play when time runs out is worth no points for either team.
+At the end of each round points are tallied for each team, the winner is declared by the team with the most points."/>
+
+
+</RelativeLayout>
+
+</ScrollView>

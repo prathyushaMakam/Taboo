@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Taboo</string>
+
+    <string name="TabooText"><u>Respective Taboo Words</u></string>
+</resources>

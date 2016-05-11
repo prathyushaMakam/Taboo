@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.prathyusha.taboo.StartGame">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No of Teams :"
+        android:id="@+id/NoOfTeams"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No of Rounds :"
+        android:id="@+id/NoOfRounds"
+        android:layout_below="@+id/NoOfTeams"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TeamsSpinner"
+        android:layout_above="@+id/NoOfRounds"
+        android:layout_toRightOf="@+id/Team1Score"
+        android:layout_alignRight="@+id/RoundsSpinner"
+        android:layout_alignEnd="@+id/RoundsSpinner"
+        android:layout_alignTop="@+id/NoOfTeams"
+        android:textAlignment="center"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/RoundsSpinner"
+        android:layout_toRightOf="@+id/Team1Score"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/NoOfRounds"
+        android:layout_alignTop="@+id/NoOfRounds"
+        android:textAlignment="center"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Team1Score"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Team 1 Score :  "
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Team1ScoreText"
+        android:hint="0"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignTop="@+id/Team1Score"
+        android:layout_alignLeft="@+id/RoundsSpinner"
+        android:layout_alignStart="@+id/RoundsSpinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Team2Score"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Team 2 Score :  "
+        android:layout_below="@+id/Team1Score"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Team2ScoreText"
+        android:hint="0"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignTop="@+id/Team2Score"
+        android:layout_alignLeft="@+id/Team1ScoreText"
+        android:layout_alignStart="@+id/Team1ScoreText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/StartButton"
+        android:onClick="StartTheGame"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a New Card"
+        android:id="@+id/NewCardButton"
+        android:onClick="NewCard"
+        android:layout_above="@+id/StartButton"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
