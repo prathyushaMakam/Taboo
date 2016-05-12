@@ -23,9 +23,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/GamePlayText"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/GamePlayHeading"
-        android:text="
-The team not giving clues must watch for Taboos or other violations of the rules. If they successfully spot a rule being broken, they may use their buzzer to interrupt play and very briefly explain the infraction. Clue-givers must place the current card into the discard pile and draw a new one. Each card in the discard pile represents one point for the other team. Once time runs out, the teams are swapped and roles are reversed. Once each player has taken a turn as clue-give, r the game ends. If teams are uneven, a player on the smaller team will be clue-giver twice."/>
+        android:text="There will two teams: Team 1 and Team 2. The game starts with Team 1. One of the Team 1 member should start explaning the First word in given card without using the following 4 Taboo words.If their other team members gives the answer, they should take '+1' point. If he/she uses the taboo word they should take '-1' point.If they want to skip the current card and go to next card without answering they should take '-1' point. The time limit for each round is 1 minute (60 seconds).The user can also add their own card."/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -33,6 +33,7 @@ The team not giving clues must watch for Taboos or other violations of the rules
         android:id="@+id/RulesHeading"
         android:text="Rules:"
         android:layout_below="@+id/GamePlayText"
+        android:layout_marginTop="20dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
@@ -47,13 +48,7 @@ The team not giving clues must watch for Taboos or other violations of the rules
 1. Clue-givers may not use any taboo words, including abbreviations and any part of the taboo word.
 2. Clue-givers may not use sound effects or use gestures to indicate the clue word.
 3. Clue-givers may pass on any card at any time, but the card is then placed in the discard pile.
-4. When time is called, the final card does not go into the discard pile, but is instead removed from play.
-
-Scoring:
-Every card stacked upon another in the card holder represents one point for Team A.
-Every card stacked in the discard pile represents one point for Team B.
-The final card in play when time runs out is worth no points for either team.
-At the end of each round points are tallied for each team, the winner is declared by the team with the most points."/>
+4. When time is called, the final card does not go into the discard pile, but is instead removed from play."/>
 
 
     <TextView
@@ -61,6 +56,7 @@ At the end of each round points are tallied for each team, the winner is declare
         android:layout_height="wrap_content"
         android:id="@+id/ScoringHeading"
         android:text="Scoring:"
+        android:layout_marginTop="20dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_below="@+id/RulesText"
         android:layout_centerVertical="true"
@@ -73,9 +69,9 @@ At the end of each round points are tallied for each team, the winner is declare
         android:id="@+id/ScoringText"
         android:layout_below="@+id/ScoringHeading"
         android:text="
-Every card stacked upon another in the card holder represents one point for Team A.
-Every card stacked in the discard pile represents one point for Team B.
-The final card in play when time runs out is worth no points for either team.
+Should take '+1' for each correct answerd card.
+Should take '-1' for skipping the card without answering.
+Should take '-1' if the playing team uses taboo word and noticed by the gaurded member of other team.
 At the end of each round points are tallied for each team, the winner is declared by the team with the most points."/>
 
 
